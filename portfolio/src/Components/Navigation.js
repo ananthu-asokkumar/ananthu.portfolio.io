@@ -3,37 +3,52 @@ import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import avatar from '../img/avatar.jpg';
 import pic from '../img/pic.jpg'
-function Navigation() {
-    return (
-        <NavigationStyled>
-            <div className="avatar">
-                <img src={pic} alt=""/>
-            </div>
-            <ul className="nav-items">
-                <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/projects" activeClassName="active-class" exact>Projects</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
-                </li>
-            </ul>
-            <footer className="footer">
-                <p> <b></b></p>
-            </footer>
-        </NavigationStyled>
-    )
+function Navigation({ navToggle, setNavToggle }) {
+  return (
+    <NavigationStyled>
+      <div className="avatar">
+        <img src={pic} alt="" />
+      </div>
+      <ul className="nav-items">
+        <li className="nav-item" onClick={() => setNavToggle(!navToggle)}>
+          <NavLink to="/" activeClassName="active-class" exact>
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-item" onClick={() => setNavToggle(!navToggle)}>
+          <NavLink to="/about" activeClassName="active-class" exact>
+            About
+          </NavLink>
+        </li>
+        <li className="nav-item" onClick={() => setNavToggle(!navToggle)}>
+          <NavLink to="/skills" activeClassName="active-class" exact>
+            Skills
+          </NavLink>
+        </li>
+        <li className="nav-item" onClick={() => setNavToggle(!navToggle)}>
+          <NavLink to="/projects" activeClassName="active-class" exact>
+            Projects
+          </NavLink>
+        </li>
+        <li className="nav-item" onClick={() => setNavToggle(!navToggle)}>
+          <NavLink to="/blogs" activeClassName="active-class" exact>
+            Blogs
+          </NavLink>
+        </li>
+        <li className="nav-item" onClick={() => setNavToggle(!navToggle)}>
+          <NavLink to="/contact" activeClassName="active-class" exact>
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+      <footer className="footer" onClick={() => setNavToggle(!navToggle)}>
+        <p>
+          {" "}
+          <b></b>
+        </p>
+      </footer>
+    </NavigationStyled>
+  );
 }
 
 const NavigationStyled = styled.nav`
