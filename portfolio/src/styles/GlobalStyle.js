@@ -32,8 +32,11 @@ const GlobalStyle = createGlobalStyle`
     --background-light-color: #F1F1F1;
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #151515;
-    --font-light-color: #313131;
-    --font-dark-color: #313131;
+    // --font-light-color: #313131;
+    // --font-dark-color: #313131;
+    // --font-dark-color-2: #151515;
+    --font-light-color: rgb(59, 58, 58);
+    --font-dark-color:#313131;
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #E4E4E4;
     --scrollbar-bg-color: #383838;
@@ -51,6 +54,7 @@ const GlobalStyle = createGlobalStyle`
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #FFF;
     --font-light-color: #a4acc4;
+    // --font-light-color: black;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #191D2B;

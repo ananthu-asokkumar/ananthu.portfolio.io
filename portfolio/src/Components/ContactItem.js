@@ -46,7 +46,7 @@ const ContactItemStyled = styled.div`
         display:flex;
         flex-direction:column;
         h6{
-            color: var(--white-color);
+            color: var(--font-light-color);
             font-size: 1.2rem;
             padding-bottom: .6rem;
         }

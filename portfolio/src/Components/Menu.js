@@ -2,21 +2,32 @@ import React from 'react'
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
 import Pinterest from '@material-ui/icons/Pinterest';
+import { display } from '@mui/system';
+import {
+  IconName,
+  DiHtml5,
+  DiCss3,
+  DiJavascript,
+  DiNodejsSmall,
+  DiMongodb,
+  DiReact,
+} from "react-icons/di";
+
+import { SiRedux, SiGit } from "react-icons/si";
 
 
 function Menu({menuItem}) {
     return (
         <MenuItemStyled >
             {
-                menuItem.map((item)=>{
+                menuItem.map((item,i)=>{
                     return (
                       <div className="grid-item" key={item.id}>
                         <div className="portfolio-content">
                           <div className="portfolio-image">
                             <img src={item.image} alt="" />
-                   
                           </div>
-                          <h6>{item.title}</h6>
+                          <h4>{item.title}</h4>
                           <p
                             style={{
                               marginTop: "10px",
@@ -25,20 +36,43 @@ function Menu({menuItem}) {
                             }}
                           >
                             {item.text}
-                                </p>
-                              
-                                <div>
-                                    <a href={item.link1} target="_blank" rel="noopener noreferrer"><button>GitHub</button></a>
-                                    <a href={item.link1} target="_blank" rel="noopener noreferrer"><button>Demo</button></a>
-                                </div>
-                                <div style={{marginTop:"2rem"}}>
-                                    
-                                  {
-                                    item.techStack.map((e, i) => <img style={{height: "3rem", width :"3rem",marginRight:"1rem"}} src={e} key={i} alt=""></img>  )
+                          </p>
+
+                          <div>
+                            <a
+                              href={item.link1}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button>GitHub</button>
+                            </a>
+                            <a
+                              href={item.link2}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <button>Demo</button>
+                            </a>
+                          </div>
+                                <div style={{ marginTop: "1.5rem", display: "flex", justifyContent:'space-evenly'}}>
+                            {/* {item.techStack.map((e, i) => (
+                              <h1 style={{color:"blue",fontSize:"3rem",paddingTop:"0px",marginTop:"0px"}}>{e}</h1>
+                            ))} */}
+                                    {
+                                        i === 0 ? <>
+                                            <DiHtml5 style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                            <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                            <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                        </> : <>
+                                                <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                                <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                                <DiReact style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                                <DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
+                                                <SiRedux style={{fontSize: "2.8rem", color: "rgb(5,127,255)"}}/>
+                                        </>
                                     }
-                               </div>
-                            </div>
-                           
+                          </div>
+                        </div>
                       </div>
                     );
                 })
@@ -46,7 +80,7 @@ function Menu({menuItem}) {
         </MenuItemStyled>
     )
 }
-
+//<img style={{height: "3rem", width :"3rem",marginRight:"1rem"}} src={e} key={i} alt=""></img>
 const MenuItemStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -66,6 +100,7 @@ const MenuItemStyled = styled.div`
             display: block;
             position: relative;
             overflow: hidden;
+            align-items:center;
             text-align: center;
             @media screen and (max-width:600px){
                 height:550px;
@@ -75,8 +110,12 @@ const MenuItemStyled = styled.div`
             //     height:700px;
                 
             // }
-            h6{
+            h4{
+                padding-top:5px;
                 font-size: 1.5rem;
+            }
+            p{
+                padding:10px;
             }
             img{
                 width: 100%;

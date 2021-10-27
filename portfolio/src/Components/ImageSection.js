@@ -8,8 +8,8 @@ import homepage from '../img/homepage.gif'
 function ImageSection() {
     return (
       <ImageSectionStyled>
-        <div className="left-content" >
-          <img src={homepage} alt="" height="390px"/>
+        <div className="left-content">
+          <img src={homepage} alt="" height="378px" />
         </div>
         <div className="right-content">
           <h4>
@@ -31,12 +31,13 @@ function ImageSection() {
             <div className="info">
               <p>: Ananthu Asokkumar</p>
               <p>: Indian</p>
-              <p>: Kochi,Kerala</p>
+              <p>: Adimali,Kerala</p>
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1SqQg7yiyHIQd-Ho-8-getsPwyjg21i1w/view?usp=sharing"
-            target="_blank" rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1pShMswy7eg3bHP06h_GMddo0P93T6zHG/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <PrimaryButton title={"Resume"} />
           </a>
@@ -47,48 +48,51 @@ function ImageSection() {
 
 
 const ImageSectionStyled = styled.div`
-    margin-top: 5rem;
-    display: flex;
-    @media screen and (max-width:1000px){
-        flex-direction: column;
-        .left-content{
-            margin-bottom: 2rem;
-        }
+  margin-top: 5rem;
+  display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    .left-content {
+      margin-bottom: 2rem;
     }
-    .left-content{
-        width: 100%;
-        img{
-            width: 95%;
-            object-fit: content;
-        }
+  }
+  .left-content {
+    width: 100%;
+    img {
+      width: 95%;
+      object-fit: content;
     }
-    .right-content{
-        width: 100%;
-        h4{
-            font-size: 1.5rem;
-            color: var(--white-color);
-            span{
-                font-size: 1.5rem;
-            }
-        }
-        .paragraph{
-            padding: 1rem 0;
-        }
-        .about-info{
-            display: flex;
-            padding-bottom: 1.4rem;
-            .info-title{
-                padding-right: 3rem;
-                p{
-                    font-weight: 600;
-                }
-            }
-            .info-title, .info{
-                p{
-                    padding: .3rem 0;
-                }
-            }
-        }
+  }
+  .right-content {
+    width: 100%;
+    h4 {
+      font-size: 1.5rem;
+      color: var(--font-light-color);
+      span {
+        font-size: 1.5rem;
+      }
     }
+    .paragraph {
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+    .about-info {
+      display: flex;
+      padding-bottom: 1.4rem;
+      .info-title {
+        padding-right: 3rem;
+        p {
+          font-weight: 600;
+        }
+      }
+      .info-title,
+      .info {
+        p {
+          padding: 0.3rem 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 `;
 export default ImageSection;

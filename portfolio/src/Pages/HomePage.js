@@ -12,13 +12,13 @@ function HomePage() {
       <HomePageStyled>
         <div className="particle-con">{/* <Particle /> */}</div>
         <div className="typography">
-          <h2>
+          <h4>
             Hi, I'm <span>Ananthu Asokkumar</span>
-          </h2>
+          </h4>
           <br />
           <p>
             A Full Stack developer who is dedicated and passionate about my work
-            and believe in hard work. I like to make full stack applications
+            and believe in hard work.<br/> I like to make full stack applications
             which challenge my skills.
           </p>
           <div className="icons">
@@ -56,7 +56,7 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
- 
+
   .typography {
     // height: 90vh;
     position: absolute;
@@ -65,7 +65,15 @@ const HomePageStyled = styled.header`
     transform: translate(-50%, -50%);
     text-align: center;
     width: 80%;
-
+    h4 {
+      font-size: 1.5rem;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
     .icons {
       display: flex;
       justify-content: center;

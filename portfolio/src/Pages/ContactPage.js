@@ -19,7 +19,7 @@ function ContactPage() {
     const linkedIn=<LinkedInIcon/>
     return (
       <MainLayout>
-        <Title title={"Contact"} span={"Contact"} />
+        <Title title={"Contact"} span={""} />
         <ContactPageStyled>
           <InnerLayout className={"contact-section"}>
             <div className="right-content">
@@ -85,7 +85,8 @@ const ContactPageStyled = styled.section`
         }
         .contact-title{
             h4{
-                color: var(--white-color);
+                // color: var(--white-color);
+                color:var(--font-light-color)
                 padding: 1rem 0;
                 font-size: 1.8rem;
             }

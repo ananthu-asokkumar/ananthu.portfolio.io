@@ -15,6 +15,27 @@ import materialui from "../img/skills/materialui.png";
 import react from "../img/skills/react.png";
 import redux from "../img/skills/redux.png";
 import mongodb from "../img/skills/mongodb.png";
+
+import {
+  IconName,
+  DiHtml5,
+  DiCss3,
+  DiJavascript,
+  DiNodejsSmall,
+  DiMongodb,
+  DiReact,
+} from "react-icons/di";
+
+import { SiRedux, SiGit } from "react-icons/si";
+
+const html1 = <DiHtml5 />;
+const css = <DiCss3 />;
+const javascript1 = <DiJavascript />;
+const node1 = <DiNodejsSmall />;
+const mongo1 = <DiMongodb />;
+const react11 = <DiReact />;
+const redux1=<SiRedux/>
+
 const Projects = [
   {
     id: 1,
@@ -24,17 +45,17 @@ const Projects = [
     link2: "https://onnbikes.herokuapp.com/home",
     title: "onnbikes.com clone",
     text: "A collaborative project where our goal was to clone the website onnbikes.com.Implemented OTP authentication,fitering funtionality based on bookings page and checkout system.",
-    techStack: [html5, css3, javascript],
+    techStack: [html1, css, javascript1],
   },
   {
     id: 2,
     category: "React mongodb",
     image: ixigo,
-    link1: "https://github.com/ananthu-asokkumar/ixigo-clone",
-    link2: "https://www.google.com",
+    link1: "https://github.com/ananthu-asokkumar/ixigo-thugs",
+    link2: "https://ixigo-frondend.vercel.app/",
     title: "ixigo.com clone",
-    text: "Clone of an Indian online travel portal,ixigo.Implemented flights page where all the details of the flighs are displayed and user will be able to filter the flights based on airlines. ",
-    techStack: [css3, react, mongodb, materialui, node],
+    text: "Clone of an Indian online travel portal, ixigo.Implemented flights page where all the details of the flighs are displayed and user will be able to filter the flights based on airlines. ",
+    techStack: [css, react11, redux1, mongo1, node1],
   },
 ];
 
