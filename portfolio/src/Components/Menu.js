@@ -60,16 +60,15 @@ function Menu({menuItem}) {
                             ))} */}
                                     {
                                         i === 0 ? <>
-                                            <DiHtml5 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
-                                            <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
-                                            <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                           <div style={{display:"flex",flexDirection:"column"}}> <DiHtml5 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">HTML5</label></div>
+                                            <div style={{display:"flex",flexDirection:"column"}}><DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">CSS3</label></div>
+                                            <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div>
                               </> : <>
-                                                <DiReact style={{ fontSize: "3.2rem", color: "rgb(5,127,255)" }} className="icons"/>
-                                                <SiRedux style={{fontSize: "2.6rem", color: "rgb(5,127,255)"}} className="icons"/>
-                                                <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
-                                                <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
-                                                
-                                                <DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                                <div style={{display:"flex",flexDirection:"column"}}><DiReact style={{ fontSize: "3.2rem", color: "rgb(5,127,255)" }} className="icons"/><label className="hide">REACT</label></div>
+                                                <div style={{display:"flex",flexDirection:"column"}}><SiRedux style={{fontSize: "2.6rem", color: "rgb(5,127,255)",marginTop:"2px"}} className="icons"/><label style={{marginTop:"3px"}} className="hide">REDUX</label></div>
+                                                <div style={{display:"flex",flexDirection:"column"}}><DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">CSS3</label></div>
+                                                <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div>
+                                                <div style={{display:"flex",flexDirection:"column"}}><DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">MONGODB</label></div>
                                                 
                                         </>
                                     }
@@ -105,12 +104,17 @@ const MenuItemStyled = styled.div`
             align-items:center;
             text-align: center;
             @media screen and (max-width:600px){
-                height:550px;
+                height:630px;
                 
             }
+            .hide{
+              display:none;
+            }
             .icons{
-             &:hover{
-                     transform:scale(1.1);
+             &:hover+.hide{
+               display:block;
+               font-size:10px;
+                    //  transform:scale(1.1);
                    }
                     
                   }
