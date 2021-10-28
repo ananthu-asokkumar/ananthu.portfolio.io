@@ -60,15 +60,17 @@ function Menu({menuItem}) {
                             ))} */}
                                     {
                                         i === 0 ? <>
-                                            <DiHtml5 style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                            <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                            <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                        </> : <>
-                                                <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                                <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                                <DiReact style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                                <DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}}/>
-                                                <SiRedux style={{fontSize: "2.8rem", color: "rgb(5,127,255)"}}/>
+                                            <DiHtml5 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                            <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                            <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                              </> : <>
+                                                <DiReact style={{ fontSize: "3.2rem", color: "rgb(5,127,255)" }} className="icons"/>
+                                                <SiRedux style={{fontSize: "2.6rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                                <DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                                <DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                                
+                                                <DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/>
+                                                
                                         </>
                                     }
                           </div>
@@ -106,6 +108,13 @@ const MenuItemStyled = styled.div`
                 height:550px;
                 
             }
+            .icons{
+             &:hover{
+                     transform:scale(1.1);
+                   }
+                    
+                  }
+                
             //    @media screen and (max-width:900px){
             //     height:700px;
                 
@@ -188,6 +197,7 @@ const MenuItemStyled = styled.div`
             }
 
             .portfolio-image{
+              
                 &::before{
                     content: "";
                     position: absolute;
@@ -197,6 +207,7 @@ const MenuItemStyled = styled.div`
                     width: 0;
                     transition: all .4s ease-in-out;
                 }
+                 
             }
             // .portfolio-image:hover{
             //     ul{
