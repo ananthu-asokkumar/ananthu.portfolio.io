@@ -98,6 +98,7 @@ const MenuItemStyled = styled.div`
             width: 100%;
             height: 600px;
             border: 1px solid white;
+            border-radius: .5rem;
             display: block;
             position: relative;
             overflow: hidden;
