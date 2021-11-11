@@ -35,7 +35,7 @@ function ImageSection() {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1HYhxsppLs8KpHPYBDlbqrqa00UfUBqQm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1spHTuV-LrWsjn_TFK4to0Bhs9V_vTvZ8/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
