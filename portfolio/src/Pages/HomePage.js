@@ -17,9 +17,10 @@ function HomePage() {
           </h4>
           <br />
           <p>
-            A Full Stack developer who is dedicated and passionate about my work
-            and believe in hard work.<br/> I like to make full stack applications
-            which challenge my skills.
+            A Full Stack developer who is dedicated and sincere about my work
+            and believe in hard work.
+            <br /> I like to make full stack applications which challenge my
+            skills.
           </p>
           <div className="icons">
             <a
@@ -44,7 +45,7 @@ function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MediumSquareFilled style={{width:"45px"}} />
+              <MediumSquareFilled style={{ width: "45px" }} />
             </a>
           </div>
         </div>
