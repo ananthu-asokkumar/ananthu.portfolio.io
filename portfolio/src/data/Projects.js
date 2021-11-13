@@ -44,7 +44,7 @@ const Projects = [
     link1: "https://github.com/shivam-singh-au17/project_oonbikes",
     link2: "https://onnbikes.herokuapp.com/home",
     title: "onnbikes.com clone",
-    text: "A collaborative project where our goal was to clone the website onnbikes.com.Implemented OTP authentication,fitering funtionality based on bookings page and checkout system.",
+    text: " Clone of  a web application onnbikes.com which rent two-wheelers on a monthly and daily basis.Implemented fitering funtionality on bookings page and checkout system.",
     techStack: [html1, css, javascript1],
   },
   {
