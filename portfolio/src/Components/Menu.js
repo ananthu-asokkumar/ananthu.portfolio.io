@@ -105,19 +105,31 @@ const MenuItemStyled = styled.div`
             align-items:center;
             text-align: center;
             @media screen and (max-width:600px){
-              height:630px;
+              height:640px;
               width: 90%;
               margin: auto;
                 
             }
+            @media screen and (max-width:411px){
+              /* height:730px; */
+              width: 90%;
+              margin: auto;
+                
+            }
+            
+            
             .iconsgroup {
-              margin-top: 1.5rem;
-              display: flex;
-              justify-content:space-evenly;
+            margin-top: 1rem;
+            display: flex;
+            width: 100%;
+            justify-content:space-evenly;
+            margin-bottom: 2rem;
 
-               @media screen and (max-width:660px){
-                  margin-bottom:1.8rem;
-                }
+            @media screen and (max-width:411px){
+                 border: 1ps solid white;
+                 
+                  
+            }
 
             }
             .hide{
