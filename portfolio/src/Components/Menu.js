@@ -106,6 +106,7 @@ const MenuItemStyled = styled.div`
             overflow: hidden;
             align-items:center;
             text-align: center;
+            justify-content: center;
             
             @media screen and (max-width:600px){
               height:650px;
@@ -122,6 +123,9 @@ const MenuItemStyled = styled.div`
             }
             
             .content-text{
+              /* text-align: center; */
+              /* width: 90%; */
+              margin: auto;
               @media screen and (max-width:411px){
                 margin-top:4.9rem ;
               }

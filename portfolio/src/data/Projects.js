@@ -44,7 +44,7 @@ const Projects = [
     link1: "https://github.com/shivam-singh-au17/project_oonbikes",
     link2: "https://onnbikes.herokuapp.com/home",
     title: "onnbikes.com clone",
-    text: " Clone of  a web application onnbikes.com which rent two-wheelers on a monthly and daily basis.Implemented fitering funtionality on bookings page and checkout system.",
+    text: " Clone of  a web application which rent two-wheelers on a monthly and daily basis. Implemented fitering funtionality on bookings page and checkout system.",
     techStack: [html1, css, javascript1],
   },
   {
@@ -54,7 +54,7 @@ const Projects = [
     link1: "https://github.com/ananthu-asokkumar/ixigo-thugs",
     link2: "https://ixigo-frondend.vercel.app/",
     title: "ixigo.com clone",
-    text: "Clone of an Indian online travel portal, ixigo.Implemented flights page where all the details of the flighs are displayed and added filters and implemented flights booking. ",
+    text: "Clone of an Indian online travel portal, ixigo. Implemented flights page where all the details of the flighs are displayed and added filters and implemented flights booking. ",
     techStack: [css, react11, redux1, mongo1, node1],
   },
 ];
