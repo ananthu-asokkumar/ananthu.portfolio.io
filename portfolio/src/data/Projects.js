@@ -54,7 +54,7 @@ const Projects = [
     link1: "https://github.com/ananthu-asokkumar/ixigo-thugs",
     link2: "https://ixigo-frondend.vercel.app/",
     title: "ixigo.com clone",
-    text: "Clone of an Indian online travel portal, ixigo.Implemented flights page where all the details of the flighs are displayed and user will be able to filter the flights based on airlines. ",
+    text: "Clone of an Indian online travel portal, ixigo.Implemented flights page where all the details of the flighs are displayed and added filters and implemented flights booking. ",
     techStack: [css, react11, redux1, mongo1, node1],
   },
 ];

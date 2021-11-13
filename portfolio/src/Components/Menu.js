@@ -27,8 +27,9 @@ function Menu({menuItem}) {
                           <div className="portfolio-image">
                             <img src={item.image} alt="" />
                           </div>
-                          <h4>{item.title}</h4>
-                          <p
+                          <div className="content-text">
+                            <h4>{item.title}</h4>
+                          <p 
                             style={{
                               marginTop: "10px",
                               marginBottom: "10px",
@@ -37,6 +38,7 @@ function Menu({menuItem}) {
                           >
                             {item.text}
                           </p>
+                          </div>
 
                           <div>
                             <a
@@ -100,12 +102,13 @@ const MenuItemStyled = styled.div`
             border: 1px solid white;
             border-radius: .5rem;
             display: block;
-            position: relative;
+            /* position: relative; */
             overflow: hidden;
             align-items:center;
             text-align: center;
+            
             @media screen and (max-width:600px){
-              height:640px;
+              height:650px;
               width: 90%;
               margin: auto;
                 
@@ -114,10 +117,15 @@ const MenuItemStyled = styled.div`
               /* height:730px; */
               width: 90%;
               margin: auto;
+              
                 
             }
             
-            
+            .content-text{
+              @media screen and (max-width:411px){
+                margin-top:4.9rem ;
+              }
+            }
             .iconsgroup {
             margin-top: 1rem;
             display: flex;
@@ -229,7 +237,9 @@ const MenuItemStyled = styled.div`
                     width: 0;
                     transition: all .4s ease-in-out;
                 }
-                 
+                 @media screen and (max-width:411px){
+                    height: 12rem;
+                }  
             }
             // .portfolio-image:hover{
             //     ul{
