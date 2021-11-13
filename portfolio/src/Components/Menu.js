@@ -54,7 +54,7 @@ function Menu({menuItem}) {
                               <button>Demo</button>
                             </a>
                           </div>
-                                <div style={{ marginTop: "1.5rem", display: "flex", justifyContent:'space-evenly'}}>
+                          <div className="iconsgroup" >
                             {/* {item.techStack.map((e, i) => (
                               <h1 style={{color:"blue",fontSize:"3rem",paddingTop:"0px",marginTop:"0px"}}>{e}</h1>
                             ))} */}
@@ -81,16 +81,16 @@ function Menu({menuItem}) {
         </MenuItemStyled>
     )
 }
-//<img style={{height: "3rem", width :"3rem",marginRight:"1rem"}} src={e} key={i} alt=""></img>
+
 const MenuItemStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     @media screen and (max-width:920px){
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
     @media screen and (max-width:670px){
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
         
     }
     .grid-item{
@@ -105,8 +105,20 @@ const MenuItemStyled = styled.div`
             align-items:center;
             text-align: center;
             @media screen and (max-width:600px){
-                height:630px;
+              height:630px;
+              width: 90%;
+              margin: auto;
                 
+            }
+            .iconsgroup {
+              margin-top: 1.5rem;
+              display: flex;
+              justify-content:space-evenly;
+
+               @media screen and (max-width:660px){
+                  margin-bottom:1.8rem;
+                }
+
             }
             .hide{
               display:none;
@@ -115,15 +127,11 @@ const MenuItemStyled = styled.div`
              &:hover+.hide{
                display:block;
                font-size:10px;
-                    //  transform:scale(1.1);
+
                    }
                     
                   }
                 
-            //    @media screen and (max-width:900px){
-            //     height:700px;
-                
-            // }
             h4{
                 padding-top:5px;
                 font-size: 1.5rem;
@@ -134,27 +142,24 @@ const MenuItemStyled = styled.div`
             img{
                 width: 100%;
                 height: 300px;
-                // object-fit:contain;
+      
             }
             button{
                     cursor:pointer;
                     border:none;
                     background-color: var(--primary-color);
-                    // padding: .rem 1.5rem;
                     color: white;
                     cursor: pointer;
                     display: inline-block;
                     font-size: .7rem;
                     text-align:center;
-                    // margin-top:10px;
                     width:70px;
                     height:40px;
                     text-transform: uppercase;
                     position: relative;
                     transition: all .4s ease-in-out;
-                     @media screen and (max-width:660px){
-                     margin-top:30px;
-                
+                    @media screen and (max-width:660px){
+                    margin-top:30px;
                     }
                     &::after{
                         content: "";

@@ -86,7 +86,7 @@ const ContactPageStyled = styled.section`
         .contact-title{
             h4{
                 // color: var(--white-color);
-                color:var(--font-light-color)
+                color:var(--font-light-color);
                 padding: 1rem 0;
                 font-size: 1.8rem;
             }
@@ -131,6 +131,7 @@ const ContactPageStyled = styled.section`
             
         }
     }
+  
 `;
 
 export default ContactPage

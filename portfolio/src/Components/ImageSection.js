@@ -31,7 +31,7 @@ function ImageSection() {
             <div className="info">
               <p>: Ananthu Asokkumar</p>
               <p>: Indian</p>
-              <p>: Adimali,Kerala</p>
+              <p>: Adimali, Kerala</p>
             </div>
           </div>
           <a

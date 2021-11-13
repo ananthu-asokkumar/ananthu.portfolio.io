@@ -6,7 +6,8 @@ import YoutubeIcon from '@material-ui/icons/YouTube';
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import homepage from '../img/homepage.gif'
 import { Instagram } from '@material-ui/icons';
-import { MediumCircleFilled,MediumSquareFilled } from "@ant-design/icons";
+import { MediumCircleFilled, MediumSquareFilled } from "@ant-design/icons";
+import { FaRegFilePdf } from "react-icons/fa";
 function HomePage() {
     return (
       <HomePageStyled>
@@ -27,7 +28,7 @@ function HomePage() {
               href="https://www.linkedin.com/in/ananthu-asokkumar-70143212b/"
               target="_blank"
               rel="noopener noreferrer"
-              className="icon i-facebook"
+              className="icon i-linkedin"
             >
               <LinkedInIcon />
             </a>
@@ -46,6 +47,14 @@ function HomePage() {
               rel="noopener noreferrer"
             >
               <MediumSquareFilled style={{ width: "45px" }} />
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1spHTuV-LrWsjn_TFK4to0Bhs9V_vTvZ8/view?usp=sharing"
+              className="icon i-resume"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaRegFilePdf style={{ width: "28px",fontSize:"22px" }} />
             </a>
           </div>
         </div>
@@ -99,6 +108,10 @@ const HomePageStyled = styled.header`
         }
       }
 
+      .i-linkedin {
+       width: 48px;
+      }
+
       .i-medium {
         &:hover {
           border: 2px solid blue;
@@ -110,6 +123,13 @@ const HomePageStyled = styled.header`
         &:hover {
           border: 2px solid #5f4687;
           color: #5f4687;
+        }
+      }
+      .i-resume {
+        &:hover {
+          border: 2px solid red;
+          color: red;
+          font-size: 20px;
         }
       }
     }

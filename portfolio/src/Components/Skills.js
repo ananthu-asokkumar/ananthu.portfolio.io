@@ -33,7 +33,7 @@ function Skills() {
     return (
       <SkillsStyled>
         <Title title={"My Skills"} span={""} />
-        <InnerLayout>
+        <InnerLayout className="skills">
           <Grid sx={{ width: "100% " }} container spacing={3} columns={24}>
             {/* <Grid item xs={2} md={2} lg={2}></Grid> */}
             <Grid item xs={12} md={8} lg={6}>
@@ -79,13 +79,7 @@ function Skills() {
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
               >
-                {/* <img
-                  src={node}
-                  alt=""
-                  height="100px"
-                  width="100px"
-                  style={{ marginTop: "3px" }}
-                /> */}
+         
                 <DiNodejsSmall
                   style={{ fontSize: "6rem", color: "rgb(5,127,255)" }}
                 />
@@ -152,22 +146,26 @@ function Skills() {
 }
 
 const SkillsStyled = styled.section`
-    .skills{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 2rem;
-        grid-column-gap: 3rem;
-        @media screen and (max-width: 700px){
-            grid-template-columns: repeat(1, 1fr);
-        }
+  .skills {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(1, 1fr);
     }
-    .skillIcon {
-        background-color:#a4acc4;
-        &:hover {
-            box-shadow: 0px 0px 12px #037fff;
-            transform: scale(1.1)
-        }
+    @media screen and (max-width: 600px) {
+    margin-left:1.5rem;
     }
+  }
+  .skillIcon {
+    background-color: #a4acc4;
+
+    &:hover {
+      box-shadow: 0px 0px 12px #037fff;
+      transform: scale(1.1);
+    }
+  }
 `;
 
 export default Skills;
