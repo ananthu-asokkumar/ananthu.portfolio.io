@@ -20,41 +20,47 @@ function ContactItem({title, icon, cont1, cont2}) {
 }
 
 const ContactItemStyled = styled.div`
-    padding:1.5rem 2rem;
-    background-color: var(--background-dark-grey);
+  background-color: var(--background-dark-grey);
+  display: flex;
+  /* border: 1px solid white; */
+  height: 6rem;
+  width: 19rem;
+  margin-bottom: 1.6rem;
+  padding: 1.5rem;
+  @media screen and (max-width: 360px) {
+    width: 18rem;
+  }
+  .left-content {
+    border: 1px solid var(--border-color);
+    /* border: 1px solid yellow; */
+    font-size: 1rem;
     display: flex;
-    width:100%;
-    height:30%
+    height: 3rem;
+    width: 2.8rem;
     align-items: center;
-    &:not(:last-child){
-        margin-bottom: 2.5rem;
-    }
-    .left-content{
-        padding: 1.5rem;
-        border: 1px solid var(--border-color);
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 1.5rem;
-        svg{
-            font-size: 2.3rem;
-        }
-    }
+    justify-content: center;
+    margin-right: .5rem;
 
-    .right-content{
-        display:flex;
-        flex-direction:column;
-        h6{
-            color: var(--font-light-color);
-            font-size: 1.2rem;
-            padding-bottom: .6rem;
-        }
-        p{
-            padding: .1rem 0;
-            font-size: .9rem;
-        }
+    svg {
+      font-size: 2rem;
     }
+  }
+
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid cadetblue; */
+    h6 {
+      color: var(--font-light-color);
+      font-size: 1.2rem;
+      padding-top: 0rem;
+      /* padding-bottom: .6rem; */
+    }
+    p {
+      /* padding: .1rem 0; */
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 export default ContactItem;

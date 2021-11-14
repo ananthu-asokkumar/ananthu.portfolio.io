@@ -55,7 +55,7 @@ const Projects = [
     link2: "https://ixigo-frondend.vercel.app/",
     title: "ixigo.com clone",
     text: "Clone of an Indian online travel portal, ixigo. Implemented flights page where all the details of the flighs are displayed and added filters and implemented flights booking. ",
-    techStack: [css, react11, redux1, mongo1, node1],
+    techStack: [css, react11, redux1, mongo1],
   },
 ];
 

@@ -67,9 +67,9 @@ function Menu({menuItem}) {
                                             <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div>
                               </> : <>
                                                 <div style={{display:"flex",flexDirection:"column"}}><DiReact style={{ fontSize: "3.2rem", color: "rgb(5,127,255)" }} className="icons"/><label className="hide">REACT</label></div>
-                                                <div style={{display:"flex",flexDirection:"column"}}><SiRedux style={{fontSize: "2.6rem", color: "rgb(5,127,255)",marginTop:"2px"}} className="icons"/><label style={{marginTop:"3px"}} className="hide">REDUX</label></div>
+                                                <div style={{display:"flex",flexDirection:"column"}}><SiRedux style={{fontSize: "2.6rem", color: "rgb(5,127,255)",marginTop:"2px"}} className="icons"/><label style={{marginTop:"7px"}} className="hide">REDUX</label></div>
                                                 <div style={{display:"flex",flexDirection:"column"}}><DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">CSS3</label></div>
-                                                <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div>
+                                                {/* <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div> */}
                                                 <div style={{display:"flex",flexDirection:"column"}}><DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">MONGODB</label></div>
                                                 
                                         </>
@@ -98,7 +98,8 @@ const MenuItemStyled = styled.div`
     .grid-item{
         .portfolio-content{
             width: 100%;
-            height: 600px;
+            /* height: 600px; */
+            height: fit-content;
             border: 1px solid white;
             border-radius: .5rem;
             display: block;
@@ -109,7 +110,7 @@ const MenuItemStyled = styled.div`
             justify-content: center;
             
             @media screen and (max-width:600px){
-              height:650px;
+              /* height:650px; */
               width: 90%;
               margin: auto;
                 
@@ -145,14 +146,15 @@ const MenuItemStyled = styled.div`
 
             }
             .hide{
-              display:none;
+              font-size:10px;
+              display:block;
             }
             .icons{
-             &:hover+.hide{
+             /* &:hover+.hide{
                display:block;
                font-size:10px;
 
-                   }
+                   } */
                     
                   }
                 

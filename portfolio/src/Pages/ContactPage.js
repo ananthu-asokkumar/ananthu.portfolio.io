@@ -22,7 +22,7 @@ function ContactPage() {
         <Title title={"Contact"} span={""} />
         <ContactPageStyled>
           <InnerLayout className={"contact-section"}>
-            <div className="right-content">
+            <div className="right-contents">
               <Grid container spacing={1}>
                 <Grid item xs={12} md={6}>
                   <ContactItem
@@ -52,8 +52,8 @@ function ContactPage() {
                   <ContactItem
                     title={"Address"}
                     icon={location}
-                    cont1={"Ananthu Asokkumar, Arayil House,Adimali,Kerala"}
-                    cont2={"India"}
+                    cont1={" Adimali, Kerala, India"}
+                    cont2={""}
                   />
                 </Grid>
               </Grid>
@@ -65,73 +65,38 @@ function ContactPage() {
 }
 
 const ContactPageStyled = styled.section`
-    .contact-section{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 2rem;
-        @media screen and (max-width: 978px){
-            grid-template-columns: repeat(2, 1fr);
-            .f-button{
-                margin-bottom: 3rem;
-            }
-        }
-        .right-content{
-            display: flex;
-            flex-wrap:wrap;
-            grid-template-columns: repeat(2, 1fr);
-            @media screen and (max-width: 502px){
-                width: 100%;
-            }
-        }
-        .contact-title{
-            h4{
-                // color: var(--white-color);
-                color:var(--font-light-color);
-                padding: 1rem 0;
-                font-size: 1.8rem;
-            }
-        }
-        .form{
-            width: 100%;
-            @media screen and (max-width: 502px){
-                width: 100%;
-            }
-            .form-field{
-                margin-top: 2rem;
-                position: relative;
-                width: 100%;
-                label{
-                    position: absolute;
-                    left: 20px;
-                    top: -19px;
-                    display: inline-block;
-                    background-color: var(--background-dark-color);
-                    padding:0 .5rem;
-                    color: inherit;
-                }
-                input{
-                    border: 1px solid var(--border-color);
-                    outline: none;
-                    background: transparent;
-                    height: 50px;
-                    padding:0 15px;
-                    width: 100%;
-                    color: inherit;
-                }
-                textarea{
-                    background-color: transparent;
-                    border: 1px solid var(--border-color);
-                    outline: none;
-                    color: inherit;
-                    width: 100%;
-                    padding: .8rem 1rem;
-                }
-            }
-
-            
-        }
-    }
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* margin-left:%; */
+    margin-top: 2rem;
+    padding: 1rem;
+    /* border: 1px solid green; */
+    .right-contents {
+      display: flex;
   
+      /* border: 1px solid red; */
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      @media screen and (max-width: 502px) {
+        width: 100%;
+      }
+    }
+    .contact-title {
+      /* border: 1px solid red; */
+      h4 {
+        color: var(--font-light-color);
+        padding: 1rem 0;
+        font-size: 1.8rem;
+      }
+    }
+    
+   
+      
+      
+    
+  }
 `;
 
 export default ContactPage

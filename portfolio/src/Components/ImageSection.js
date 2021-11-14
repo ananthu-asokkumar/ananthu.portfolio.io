@@ -57,15 +57,25 @@ const ImageSectionStyled = styled.div`
     }
   }
   .left-content {
-    width: 100%;
+    width: 90%;
     img {
-      width: 95%;
+      width: 100%;
       object-fit: content;
+      
     }
+    @media screen and (max-width:769px){
+      padding-left: .5rem;
+      width: 95%;
+  
+    }
+    
   }
   .right-content {
+    padding: .67rem;
+    padding-left: .8rem;
+    padding-top: 0rem;
     width: 100%;
-    h4 {
+     h4 {
       font-size: 1.5rem;
       color: var(--font-light-color);
       span {
@@ -80,7 +90,7 @@ const ImageSectionStyled = styled.div`
       display: flex;
       padding-bottom: 1.4rem;
       .info-title {
-        padding-right: 3rem;
+        padding-right: 2rem;
         p {
           font-weight: 600;
         }
@@ -93,6 +103,40 @@ const ImageSectionStyled = styled.div`
         }
       }
     }
+    @media screen and (max-width:440px){
+      padding: .5rem;
+  
+    }
+    @media screen and (max-width:320px){
+      padding: .5rem;
+      h4{
+        font-size: 1.3rem;
+        span{
+          font-size: 1.3rem;
+        }
+      }
+      .about-info {
+      display: flex;
+      padding-bottom: 1.4rem;
+      .info-title {
+        padding-right: 2.2rem;
+        p {
+          font-weight: 600;
+        }
+      }
+      .info-title,
+      .info {
+        p {
+          padding: 0.3rem 0;
+          font-size: .9rem;
+        }
+      }
+  
+    }
+
+    
+   
+
   }
 `;
 export default ImageSection;
