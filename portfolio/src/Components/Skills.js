@@ -33,10 +33,10 @@ function Skills() {
     return (
       <SkillsStyled>
         <Title title={"My Skills"} span={""} />
-        <InnerLayout className="skills">
-          <Grid sx={{ width: "100% " }} container spacing={3} columns={24}>
+        <div className="skills">
+          <Grid sx={{ width: "100% " }} container columns={24}>
             {/* <Grid item xs={2} md={2} lg={2}></Grid> */}
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
@@ -48,7 +48,7 @@ function Skills() {
                 <Typography>HTML5</Typography>
               </Card>
             </Grid>
-            <Grid item xs={6} md={8} lg={6} sx={{ width: "50%" }}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
@@ -59,7 +59,7 @@ function Skills() {
               </Card>
             </Grid>
             {/* <Grid item xs={0} md={0} lg={2}></Grid> */}
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
@@ -74,19 +74,18 @@ function Skills() {
             {/* <Grid item xs={0} md={0} lg={2}></Grid> */}
 
             {/* <Grid item xs={0} md={0} lg={2}></Grid> */}
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
               >
-         
                 <DiNodejsSmall
                   style={{ fontSize: "6rem", color: "rgb(5,127,255)" }}
                 />
                 <Typography>Node Js</Typography>
               </Card>
             </Grid>
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
@@ -98,7 +97,7 @@ function Skills() {
                 <Typography>mongoDB</Typography>
               </Card>
             </Grid>
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
@@ -112,7 +111,7 @@ function Skills() {
             </Grid>
             {/* <Grid item xs={0} lg={2}></Grid> */}
             {/* <Grid item xs={0} lg={2}></Grid> */}
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
@@ -128,39 +127,51 @@ function Skills() {
                 <Typography>Redux</Typography>
               </Card>
             </Grid>
-            <Grid item xs={12} md={8} lg={6}>
+            <Grid item xs={12} sm={8} md={8} lg={6}>
               <Card
                 className="skillIcon"
                 sx={{ width: "130px", textAlign: "center", height: "150px" }}
               >
                 {/* <img src={materialui} alt="" height="100px" width="100px" /> */}
-                <SiGit style={{ fontSize: "5rem", color: "rgb(5,127,255)",marginTop: "18px", }} />
+                <SiGit
+                  style={{
+                    fontSize: "5rem",
+                    color: "rgb(5,127,255)",
+                    marginTop: "18px",
+                  }}
+                />
                 <Typography>Git</Typography>
               </Card>
             </Grid>
           </Grid>
           {/* </div> */}
-        </InnerLayout>
+        </div>
       </SkillsStyled>
     );
 }
 
 const SkillsStyled = styled.section`
+  /* border: 6px solid white; */
+  /* @media screen and (max-width: 320px) {
+    margin-left: 0rem;
+  } */
   .skills {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
+    padding: 3rem 0rem;
+    /* border: 1px solid white; */
     grid-row-gap: 2rem;
     grid-column-gap: 3rem;
     @media screen and (max-width: 700px) {
       grid-template-columns: repeat(1, 1fr);
     }
     @media screen and (max-width: 600px) {
-    margin-left:1.5rem;
+      margin: auto;
     }
   }
   .skillIcon {
     background-color: #a4acc4;
-
+    margin: auto;
+    margin-top: 2rem;
     &:hover {
       box-shadow: 0px 0px 12px #037fff;
       transform: scale(1.1);
