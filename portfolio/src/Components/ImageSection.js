@@ -136,7 +136,7 @@ const ImageSectionStyled = styled.div`
 
     
    
-
+  }
   }
 `;
 export default ImageSection;
