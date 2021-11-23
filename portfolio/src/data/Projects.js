@@ -65,7 +65,7 @@ const Projects = [
     link1: "https://github.com/santoshmcode/quora-clone",
     link2: "https://quora-app.netlify.app/",
     title: "quora.com clone",
-    text: "Clone of website quora.com which is a place to gain and share knowledge. Implemented questions and answers pages where user can post questions or answers and implemented search functionality for particular questions",
+    text: "Clone of website quora.com which is a place to gain and share knowledge. Implemented questions and answers pages where user can post questions or answers and implemented search functionality for particular questions.",
     techStack: [css, react11, redux1, mongo1],
   },
 ];
