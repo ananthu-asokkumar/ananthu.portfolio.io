@@ -13,7 +13,7 @@ import {
   DiReact,
 } from "react-icons/di";
 
-import { SiRedux, SiGit } from "react-icons/si";
+import { SiRedux, SiGit, SiFirebase } from "react-icons/si";
 
 
 function Menu({menuItem}) {
@@ -29,15 +29,15 @@ function Menu({menuItem}) {
                           </div>
                           <div className="content-text">
                             <h4>{item.title}</h4>
-                          <p 
-                            style={{
-                              marginTop: "10px",
-                              marginBottom: "10px",
-                              fontSize: "1rem",
-                            }}
-                          >
-                            {item.text}
-                          </p>
+                            <p
+                              style={{
+                                marginTop: "10px",
+                                marginBottom: "10px",
+                                fontSize: "1rem",
+                              }}
+                            >
+                              {item.text}
+                            </p>
                           </div>
 
                           <div>
@@ -56,24 +56,202 @@ function Menu({menuItem}) {
                               <button>Demo</button>
                             </a>
                           </div>
-                          <div className="iconsgroup" >
+                          <div className="iconsgroup">
                             {/* {item.techStack.map((e, i) => (
                               <h1 style={{color:"blue",fontSize:"3rem",paddingTop:"0px",marginTop:"0px"}}>{e}</h1>
                             ))} */}
-                                    {
-                                        i === 0 ? <>
-                                           <div style={{display:"flex",flexDirection:"column"}}> <DiHtml5 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">HTML5</label></div>
-                                            <div style={{display:"flex",flexDirection:"column"}}><DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">CSS3</label></div>
-                                            <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div>
-                              </> : <>
-                                                <div style={{display:"flex",flexDirection:"column"}}><DiReact style={{ fontSize: "3.2rem", color: "rgb(5,127,255)" }} className="icons"/><label className="hide">REACT</label></div>
-                                                <div style={{display:"flex",flexDirection:"column"}}><SiRedux style={{fontSize: "2.6rem", color: "rgb(5,127,255)",marginTop:"2px"}} className="icons"/><label style={{marginTop:"7px"}} className="hide">REDUX</label></div>
-                                                <div style={{display:"flex",flexDirection:"column"}}><DiCss3 style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">CSS3</label></div>
-                                                {/* <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div> */}
-                                                <div style={{display:"flex",flexDirection:"column"}}><DiMongodb style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">MONGODB</label></div>
-                                                
-                                        </>
-                                    }
+                            {i === 0 ? (
+                              <>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  {" "}
+                                  <DiHtml5
+                                    style={{
+                                      fontSize: "3rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">HTML5</label>
+                                </div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <DiCss3
+                                    style={{
+                                      fontSize: "3rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">CSS3</label>
+                                </div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    width: "50px",
+                                  }}
+                                >
+                                  <DiJavascript
+                                    style={{
+                                      fontSize: "3rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">JAVASCRIPT</label>
+                                </div>
+                              </>
+                            ) : i === 1 ? (
+                              <>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <DiReact
+                                    style={{
+                                      fontSize: "3.2rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">REACT</label>
+                                </div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <SiRedux
+                                    style={{
+                                      fontSize: "2.6rem",
+                                      color: "rgb(5,127,255)",
+                                      marginTop: "2px",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label
+                                    style={{ marginTop: "7px" }}
+                                    className="hide"
+                                  >
+                                    REDUX
+                                  </label>
+                                </div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <DiCss3
+                                    style={{
+                                      fontSize: "3rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">CSS3</label>
+                                </div>
+                                {/* <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div> */}
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <DiMongodb
+                                    style={{
+                                      fontSize: "3rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">MONGODB</label>
+                                </div>
+                              </>
+                            ) : (
+                              <>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <DiReact
+                                    style={{
+                                      fontSize: "3.2rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">REACT</label>
+                                </div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <SiRedux
+                                    style={{
+                                      fontSize: "2.6rem",
+                                      color: "rgb(5,127,255)",
+                                      marginTop: "2px",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label
+                                    style={{ marginTop: "7px" }}
+                                    className="hide"
+                                  >
+                                    REDUX
+                                  </label>
+                                </div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <DiCss3
+                                    style={{
+                                      fontSize: "3rem",
+                                      color: "rgb(5,127,255)",
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">CSS3</label>
+                                </div>
+                                {/* <div style={{display:"flex",flexDirection:"column",width:"50px"}}><DiJavascript style={{fontSize: "3rem", color: "rgb(5,127,255)"}} className="icons"/><label className="hide">JAVASCRIPT</label></div> */}
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                  }}
+                                >
+                                  <SiFirebase
+                                    style={{
+                                      fontSize: "2.8rem",
+                                      color: "rgb(5,127,255)",
+                                      marginBottom: ".2rem"
+                                    }}
+                                    className="icons"
+                                  />
+                                  <label className="hide">FIREBASE</label>
+                                </div>
+                              </>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -233,7 +411,7 @@ const MenuItemStyled = styled.div`
             }
 
             .portfolio-image{
-              
+                object-fit: cover;
                 &::before{
                     content: "";
                     position: absolute;

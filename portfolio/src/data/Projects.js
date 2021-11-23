@@ -6,6 +6,7 @@ import img3 from '../img/portImages/maya-3.jpg';
 import onn from '../img/portImages/onnBikes.PNG';
 import onn1 from '../img/portImages/onnBikes1.PNG'
 import ixigo from '../img/portImages/ixigo.PNG';
+import quora from '../img/portImages/quora.PNG'
 import html5 from "../img/skills/html5.png";
 import css3 from "../img/skills/css3.png";
 import nodejs from "../img/skills/nodejs.png";
@@ -55,6 +56,16 @@ const Projects = [
     link2: "https://ixigo-frondend.vercel.app/",
     title: "ixigo.com clone",
     text: "Clone of an Indian online travel portal, ixigo. Implemented flights page where all the details of the flighs are displayed and added filters and implemented flights booking. ",
+    techStack: [css, react11, redux1, mongo1],
+  },
+  {
+    id: 3,
+    category: "React mongodb firebase",
+    image: quora,
+    link1: "https://github.com/santoshmcode/quora-clone",
+    link2: "https://quora-app.netlify.app/",
+    title: "quora.com clone",
+    text: "Clone of website quora.com which is a place to gain and share knowledge. Implemented questions answer pages where user can ask or post answers and implemented search functionality for particular questions",
     techStack: [css, react11, redux1, mongo1],
   },
 ];
